@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>BMI Kalkulator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="style">
+</head>
+<body>
+    <div class="container">
+    	<div class="panel">
+    		<h2 class="text-center">Izračunaj index tjelesne mase</h2>
+    		
+    			<p id="introText" class="text-center"><u>Unesi svoju težinu i visinu da bi provjerio index tjelesne mase</u></p>
+    			
+    			<form>
+    				<div id="weightInput">
+    					<p><b>Unesi svoju težinu (KG)</b></p>
+    		     		<input id="weight" type="number" pattern="[0-9]*" name="a" />
+    				</div>
+    				<div id="heightInput">
+    					<p><b>Unesi svoju visinu (CM)</b></p>
+	    				 <input id="height" type="number" pattern="[0-9]*" name="b"/> 
+    				</div>
+    		     <button type="button" class="btn" onclick="calculate()">Izračunaj</button>
+    		</form>
+    		<div id="results" class="text-center"><u>Rezultat će se pojaviti ovdje!</u></div>
+    	</div>
+    </div>
+	<br>
+	<div id="table">
+		<table>
+			<caption><b>BMI INDEX:</b></caption>
+			<tr>
+				<th>Pothranjen</th>
+				<th>Zdrav</th>
+				<th>Pretežak</th>
+				<th>Gojazan</th>
+			</tr>
+			<tr>
+				<td>Ispod 18.5</td>
+				<td>18.5 - 24.9</td>
+				<td>25.0 - 29.9 </td>
+				<td>30.0 i iznad</td>
+
+			</tr>
+		</table>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
